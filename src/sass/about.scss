@@ -1,0 +1,87 @@
+/***************************************
+ *              ABOUT
+ ***************************************/
+$font: 'Quantico',sans-serif;
+
+.about {
+  max-width: 1000px;
+  margin: 50px auto;
+  color: #d6d6d6;
+  font-family: $font;
+
+  .section {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+
+    .pic {
+      width: 30%;
+
+      img {
+        width: 100%;
+        border: #d6d6d6 10px solid;
+      }
+    }
+
+    .content {
+      margin: 20px;
+
+      //icon
+      img {
+        width: 35px;
+        margin-right: 10px;
+      }
+
+      .detail-child:not(:last-child) {
+        margin-bottom: 30px;
+
+        a {
+          color: #f6a765;
+          text-decoration: underline #805734;
+        }
+      }
+    }
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    &.work {
+      .detail {
+        .year {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &.language .content, &.hobby .content {
+      .detail {
+        display: flex;
+        align-items: center;
+
+        .desc {
+          .name {
+            font-weight: bold;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about {
+    .section {
+      display: block;
+
+      .pic {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

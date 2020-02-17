@@ -1,0 +1,117 @@
+/**********************************
+ *          JOURNEY
+ **********************************/
+$font-country-desc: 'Quantico',sans-serif;
+$font-country-name: 'Segoe UI Black',sans-serif;
+
+.worldMap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: radial-gradient(#182b34, #2d1d34);
+
+  div[class^='desc-visible'] {
+    font-family: $font-country-desc;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    color: #00ffa7;
+    box-shadow: 0 4px 16px 0 rgba(#00ffa7, 0.4);
+    z-index: 1000;
+  }
+
+  div[class^='name-visible'] {
+    font-family: $font-country-name;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  //JSで指定すると上手くいかないので、とりあえずscssで指定
+  //japan
+  .name-visible0 {
+    background: linear-gradient(45deg, #E20112, #fff);
+  }
+
+  //spain
+  .name-visible1 {
+    background: linear-gradient(0deg, #E00011, #F8DB09, #E00011);
+  }
+
+  //uk
+  .name-visible2 {
+    background: linear-gradient(0deg, #C3102D, #fff, #012066);
+  }
+
+  //germaney
+  .name-visible3 {
+    background: linear-gradient(0deg, #F8C800, #D70000, #000);
+  }
+
+  //poland
+  .name-visible4 {
+    background: linear-gradient(0deg, #E00011, #fff);
+  }
+
+  //ukraine
+  .name-visible5 {
+    background: linear-gradient(0deg, #FFD500, #52C3F1);
+  }
+
+  //mexico
+  .name-visible6 {
+    background: linear-gradient(0deg, #006847, #fff, #CE1126);
+  }
+
+  //guatemala
+  .name-visible7 {
+    background: linear-gradient(0deg, #4997D0, #fff, #4997D0);
+  }
+
+  //peru
+  .name-visible8 {
+    background: linear-gradient(0deg, #E60012, #fff, #E60012);
+  }
+
+  //bolivia
+  .name-visible9 {
+    background: linear-gradient(0deg, #E60012, #FFF100, #009944);
+  }
+
+  //chile
+  .name-visible10 {
+    background: linear-gradient(0deg, #0055A2, #fff, #E60012);
+  }
+
+  //argentina
+  .name-visible11 {
+    background: linear-gradient(0deg, #74ACDF, #fff, #74ACDF);
+  }
+
+  //uruguay
+  .name-visible12 {
+    background: linear-gradient(0deg, #fff, #0038A8);
+  }
+
+  img[class^='pic-visible'] {
+    object-fit: cover;
+    border-radius: 50%;
+    filter: brightness(80%);
+    background: #1d2739;
+    border: white 5px solid;
+    box-shadow: 0 4px 16px 0 rgba(0, 255, 167, 0.4);
+  }
+
+  img[class^='flag-visible'] {
+    border-radius: 4px;
+    z-index: 1000;
+  }
+
+  .pic-text {
+    color: #fff;
+    z-index: 100;
+  }
+}

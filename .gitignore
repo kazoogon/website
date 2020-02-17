@@ -1,0 +1,5 @@
+/.idea
+/.dev
+/dist/index.css
+/dist/index.js
+/node_modules

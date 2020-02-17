@@ -1,0 +1,85 @@
+/*****************
+ *    TOP
+ *****************/
+$font-nav: 'Share Tech Mono',monospace;
+
+.top {
+
+  &__title {
+    margin: 0 auto;
+    width: 20rem;
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .slices {
+    --slices-width: 100vw;
+    --slices-height: 100vh;
+    --slices: 30;
+    --gap: 0px;
+    width: var(--slices-width);
+    height: var(--slices-height);
+    display: grid;
+    grid-template-columns: repeat(var(--slices), 1fr);
+    grid-gap: var(--gap);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    &--horizontal {
+      grid-template-columns: none;
+      grid-template-rows: repeat(var(--slices), 1fr);
+    }
+  }
+
+  .slice {
+    position: relative;
+    overflow: hidden;
+
+    &__bg {
+      width: var(--slices-width);
+      height: var(--slices-height);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &::before {
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: ' ';
+      }
+    }
+  }
+
+  .slides {
+    .content {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        margin-top: 20px;
+
+        &-item {
+          font-family: $font-nav;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

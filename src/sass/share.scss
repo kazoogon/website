@@ -1,0 +1,75 @@
+$font-nav: 'Share Tech Mono',monospace;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #050e15, #0a3a45);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity .4s ease-in;
+}
+.show {
+  opacity: 1;
+  transition: opacity .4s ease-out;
+}
+
+.title {
+  width: 5rem;
+  position: absolute;
+  top: 3%; left: 3%;
+  z-index: 100;
+
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.navigation {
+  $z-index: 100;
+
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: $z-index;
+  font-family: $font-nav;
+
+  &-item {
+    width: 33.333333%;
+    background: rgba(#0b1b27, 0.9);
+    text-align: center;
+    z-index: $z-index + 1;
+
+    &:not(:last-child) {
+      border-right: #163136 .5px solid;
+    }
+
+    a {
+      color: #428799;
+      text-decoration: none;
+      display: block;
+      padding: 12px 0;
+      z-index: $z-index + 2;
+    }
+
+    &.active a {
+      color: #F6A765;
+    }
+  }
+}
