@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
+    "sourceMap": false,
     // TSはECMAScript5に変換
     "target": "es5",
     // TSのモジュールはES Modulesとして出力
@@ -11,6 +11,10 @@
     "lib": [
       "es2019",
       "dom"
-    ]
+    ],
+    //https://living-sun.com/ja/typescript/834525-typescript-how-to-downgrade-or-ignore-certain-types-of-errors-typescript-compilation-warnings.html
+    "no-consecutive-blank-lines": false,
+    "no-unused-variable": false,
+    "noUnusedLocals": false
   }
 }

@@ -13,10 +13,14 @@ three.js 0.110.0
 webpack 4.41.2
 
 ## Usage
+development
 ```
-npm run watch
-npm run build
-(then create dist dir)
+$npm run watch (or npm run build)
+```
+
+production
+```
+$ npm run build:production
 ```
 ## Licence
 
