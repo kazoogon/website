@@ -15,7 +15,7 @@ module.exports = [
                 {
                     // 拡張子.ts もしくは.tsx の場合
                     test: /\.tsx?$/,
-                    // TypeScript をコンパイルする
+                    // compile typescript
                     use: "ts-loader"
                 },
                 {

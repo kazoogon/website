@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {getRandomInt} from './common';
 import {Promise} from "q";
 

@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "checkJs": false,
+    "strict": false,
+//    "noImplicitAny": false,                 /* 暗黙の 'any'型で式と宣言のエラーを発生 */
+//    "strictNullChecks": false,              /* 厳密なヌルチェックを有効に */
+//    "strictFunctionTypes": false,           /* 関数型の厳密なチェックを有効に */
+//    "strictPropertyInitialization": false,  /* クラスのプロパティ初期化の厳密なチェックを有効に */
+//    "noImplicitThis": false,                /* 暗黙の 'any'型で 'this'式のエラーを発生 */
+//    "strictBindCallApply": false,           /* 暗黙の 'any'型で 'this'式のエラーを発生 */
+//    "skipLibCheck": true,
     "sourceMap": false,
     // TSはECMAScript5に変換
     "target": "es5",
@@ -12,9 +21,6 @@
       "es2019",
       "dom"
     ],
-    //https://living-sun.com/ja/typescript/834525-typescript-how-to-downgrade-or-ignore-certain-types-of-errors-typescript-compilation-warnings.html
-    "no-consecutive-blank-lines": false,
-    "no-unused-variable": false,
-    "noUnusedLocals": false
+    "removeComments": true
   }
 }

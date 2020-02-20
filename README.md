@@ -1,7 +1,7 @@
-portfolio "KAZIU" 😎
+my website "Kaziu" 😎
 ====
 
-It's my portfolio.  
+It's my website.  
 I'm Kazu, but Polish people call me "Kaziu".    
 Kaziu is kawaii version of polish name "Kazimierz(カジミエジュ)"
 
@@ -15,7 +15,7 @@ webpack 4.41.2
 ## Usage
 development
 ```
-$npm run watch (or npm run build)
+$ npm run watch (or npm run build)
 ```
 
 production

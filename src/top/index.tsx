@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react';
 import {DualImageLayout} from './dil';
 import TitleSvg from '../img/kaziu.svg';

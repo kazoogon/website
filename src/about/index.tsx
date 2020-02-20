@@ -12,7 +12,7 @@ export class About extends React.Component {
 
   render() {
     return (
-      <div className="about" ref={ref => (this.appRef = ref)}>
+      <div className="about">
         <Work />
         <Language />
         <Hobby />

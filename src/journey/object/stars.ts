@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as THREE from 'three';
 import * as CONST from '../../utils/const';
 
