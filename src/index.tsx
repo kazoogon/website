@@ -14,7 +14,6 @@ interface IState {
   page: string,
   tmpPageName: string,
   isHide: boolean,
-  isFinishLoad: boolean
 }
 
 class App extends React.Component<{}, IState> {
@@ -27,16 +26,11 @@ class App extends React.Component<{}, IState> {
       page: PAGE_NAME.TOP,
       tmpPageName: '',
       isHide: false,
-      isFinishLoad: false
     };
 
     //deal with reloading (maybe there is better way tho)
     //(tmp)reload時にはtopページに戻り、urlを / に。
     window.history.pushState(null, null, `#/`);
-  }
-
-  componentDidMount() {
-    this.setState({isFinishLoad: true});
   }
 
   private changePage = (page: string): void => {
@@ -60,33 +54,29 @@ class App extends React.Component<{}, IState> {
   render() {
     let display;
 
-    if(!this.state.isFinishLoad) {
-      display = <div className="loading"><img src="./img/loading.gif" /></div>
+    if (this.state.page === PAGE_NAME.TOP) {
+      display = <Top changePage={this.changePage}/>;
     } else {
-      if (this.state.page === PAGE_NAME.TOP) {
-        display = <Top changePage={this.changePage}/>;
-      } else {
-        display =
-          <HashRouter>
-            <div className="title" ref={this.titleRef}><TitleSvg /></div>
-            <div className="navigation">
-              <div className={`navigation-item ${this.state.page === PAGE_NAME.ABOUT? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.ABOUT)}>
-                <Link to="/about">about me</Link>
-              </div>
-              <div className={`navigation-item ${this.state.page === PAGE_NAME.JOURNEY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.JOURNEY)}>
-                <Link to="/journey">journey</Link>
-              </div>
-              <div className={`navigation-item ${this.state.page === PAGE_NAME.GALLERY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.GALLERY)}>
-                <Link to="/gallery">gallery</Link>
-              </div>
+      display =
+        <HashRouter>
+          <div className="title" ref={this.titleRef}><TitleSvg /></div>
+          <div className="navigation">
+            <div className={`navigation-item ${this.state.page === PAGE_NAME.ABOUT? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.ABOUT)}>
+              <Link to="/about">about me</Link>
             </div>
-            <div>
-              <Route path="/about" component={About}/>
-              <Route path="/journey" component={Journey}/>
-              <Route path="/gallery" component={Gallery}/>
+            <div className={`navigation-item ${this.state.page === PAGE_NAME.JOURNEY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.JOURNEY)}>
+              <Link to="/journey">journey</Link>
             </div>
-          </HashRouter>
-      }
+            <div className={`navigation-item ${this.state.page === PAGE_NAME.GALLERY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.GALLERY)}>
+              <Link to="/gallery">gallery</Link>
+            </div>
+          </div>
+          <div>
+            <Route path="/about" component={About}/>
+            <Route path="/journey" component={Journey}/>
+            <Route path="/gallery" component={Gallery}/>
+          </div>
+        </HashRouter>
     }
 
     return (

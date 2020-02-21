@@ -75,12 +75,17 @@ a {
   }
 }
 
-.loading {
+#loading {
   height: 100vh;
   width: 100vw;
   background: #eefaff;
+  z-index: 1000;
 
   img {
     @include position-center();
+  }
+
+  &.none {
+    display: none;
   }
 }
