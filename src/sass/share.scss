@@ -1,3 +1,4 @@
+@import "mixin";
 $font-nav: 'Share Tech Mono',monospace;
 
 *,
@@ -71,5 +72,15 @@ a {
     &.active a {
       color: #F6A765;
     }
+  }
+}
+
+.loading {
+  height: 100vh;
+  width: 100vw;
+  background: #eefaff;
+
+  img {
+    @include position-center();
   }
 }
