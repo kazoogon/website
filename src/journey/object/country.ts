@@ -11,19 +11,19 @@ export class Country {
       'index': 1,
       'name': 'spain',
       'latlng': [40.4167, -3.7037],
-      'desc' : 'hitch hike and Spanish people made for me paella, Gracias &#129368'
+      'desc' : 'hitch hiking and Spanish people made paella for me, Gracias &#129368'
     },
     {
       'index': 2,
       'name': 'uk',
       'latlng': [51.2838, 0],
-      'desc' : "I bought bicycle and I've got cramp in my leg 🚲"
+      'desc' : "I bought a bicycle and I've got a cramp in my leg 🚲"
     },
     {
       'index': 3,
       'name': 'germany',
       'latlng': [52.52, 13.4049],
-      'desc' : 'I had eaten almost everyday german cookie and beer &#129346'
+      'desc' : 'I\'ve had eaten almost everyday german cookie and beer &#129346'
     },
     {
       'index': 4,
@@ -47,37 +47,37 @@ export class Country {
       'index': 7,
       'name': 'guatemala',
       'latlng': [15.7834, -90.2307],
-      'desc' : 'I bought remote from remote seller at first time in my life &#128241'
+      'desc' : 'I bought remote from a remote seller for the first time in my life &#128241'
     },
     {
       'index': 8,
       'name': 'peru',
       'latlng': [-9.1899, -75.0151],
-      'desc' : "When I walked near from Nazca Lines, I've got cramp in my leg 🏃"
+      'desc' : "When I walked near Nazca Lines, I've got a cramp in my leg 🏃"
     },
     {
       'index': 9,
       'name': 'bolivia',
       'latlng': [-16.2901, -63.5886],
-      'desc' : "I was excited at Uyuni, and I've got cramp in my leg &#128557",
+      'desc' : "I was excited at Uyuni, and I've got a cramp in my leg &#128557",
     },
     {
       'index': 10,
       'name': 'chile',
       'latlng': [-35.6751, -71.5429],
-      'desc' : 'I was excited at delicious sea food, and I had a stomachache &#128526'
+      'desc' : 'I was excited about delicious sea food, and I had a stomachache &#128526'
     },
     {
       'index': 11,
       'name': 'argentina',
       'latlng': [-38.416, -63.6166],
-      'desc' : "My firend's mom suddenly woke me up to go to ice cream shop at night 2:00, and I've got cramp in my leg &#128096",
+      'desc' : "My friend's mom suddenly woke me up to go to an ice cream shop at 2:00 am, and I've got a cramp in my leg &#128096",
     },
     {
       'index': 12,
       'name': 'uruguay',
       'latlng': [-32.5227, -55.7658],
-      'desc': 'I was refused entering country at passport control, because I wore T-shirt Real Madrid. So I took off it 🤣'
+      'desc': 'I was refused to enter the country at the passport control, because I wore Real Madrid T-shirt. So I took it off 🤣'
     },
   ];
 

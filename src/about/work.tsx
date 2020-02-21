@@ -17,7 +17,7 @@ export class Work extends React.Component {
           <div className="detail">
             <div className="detail-child">
               <div className="year">2018-2020  Co.Mfro</div>
-              <a href="https://www.quicca.com/" target="_blank">website</a> create domain registry system<br/>
+              <a href="https://www.quicca.com/" target="_blank">website</a> created domain registry system<br/>
               <img src="https://cdn.svgporn.com/logos/laravel.svg" alt="laravel logo"/>
               <img src="https://cdn.svgporn.com/logos/riot.svg" alt="riot.js logo"/>
               <img src="https://cdn.svgporn.com/logos/react.svg" alt="react.js logo"/>
@@ -28,7 +28,7 @@ export class Work extends React.Component {
 
             <div className="detail-child">
               <div className="year">2017-2018  Co.S-cubism</div>
-              <a href="https://www.familiar.co.jp/" target="_blank">website</a> create, modify EC-site<br/>
+              <a href="https://www.familiar.co.jp/" target="_blank">website</a> created, modified EC-site<br/>
               <img src="https://cdn.svgporn.com/logos/php.svg" alt="php logo"/>
               <img src="https://cdn.svgporn.com/logos/jquery-mobile.svg" alt="php logo"/>
               <img src="https://cdn.svgporn.com/logos/git-icon.svg" alt="git logo"/>

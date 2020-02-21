@@ -29,7 +29,7 @@ export class Language extends React.Component {
           </div>
           <div className="detail">
             <img src={`${CONST.PATH.IMG_JOURNEY_FLAG}spain.svg`} width="50px" alt="spain flag"/>
-            <div className="desc"><div className="name">Spanish</div> It was Intermediate, but I don't use it recently</div>
+            <div className="desc"><div className="name">Spanish</div> Used to be Intermediate, but I don't use it recently</div>
           </div>
         </div>
       </div>
