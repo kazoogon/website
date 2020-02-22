@@ -13,6 +13,7 @@ three.js 0.110.0
 webpack 4.41.2
 
 ## Usage
+### compile js and css
 development
 ```
 $ npm run watch (or npm run build)
@@ -22,9 +23,11 @@ production
 ```
 $ npm run build:production
 ```
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+### the case of local
+```
+$ cd ./dist
+$ live-server .
+```
 
 ## Author
 
