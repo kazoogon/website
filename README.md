@@ -12,6 +12,9 @@ typescript 3.7.2
 three.js 0.110.0    
 webpack 4.41.2
 
+## Infrastructure
+2/2020 AWS (EC2)
+
 ## Usage
 ### compile js and css
 development
