@@ -29,7 +29,7 @@ export class Country {
       'index': 4,
       'name': 'poland',
       'latlng': [52.2296, 21.0122],
-      'desc': 'My wallet and phone were stolen &#128549;'
+      'desc': 'My wallet and phone were stolen. <br> Oddaj! 😂'
     },
     {
       'index': 5,
