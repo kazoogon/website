@@ -26,6 +26,13 @@ production
 ```
 $ npm run build:production
 ```
+
+(note for me)   
+EC2::t3.nanoではメモリが少なすぎて、npm run build:productionすると下記エラー
+```
+FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
+```
+t3.microに変更して対処
 ### the case of local
 ```
 $ cd ./dist
