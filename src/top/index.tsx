@@ -124,7 +124,7 @@ export class Top extends React.Component<IProps, {}> {
               <nav className="grid__item nav">
                 <div className="nav-item" onClick={() => this.changePage(PAGE_NAME.ABOUT)}>about me</div>
                 <div className="nav-item" onClick={() => this.changePage(PAGE_NAME.JOURNEY)}>journey</div>
-                <div className="nav-item" onClick={() => this.changePage(PAGE_NAME.GALLERY)}>gallery</div>
+                {/*<div className="nav-item" onClick={() => this.changePage(PAGE_NAME.GALLERY)}>gallery</div>*/}
               </nav>
             </div>
           </div>

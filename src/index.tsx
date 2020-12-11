@@ -67,14 +67,14 @@ class App extends React.Component<{}, IState> {
             <div className={`navigation-item ${this.state.page === PAGE_NAME.JOURNEY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.JOURNEY)}>
               <Link to="/journey">journey</Link>
             </div>
-            <div className={`navigation-item ${this.state.page === PAGE_NAME.GALLERY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.GALLERY)}>
-              <Link to="/gallery">gallery</Link>
-            </div>
+            {/*<div className={`navigation-item ${this.state.page === PAGE_NAME.GALLERY? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.GALLERY)}>*/}
+            {/*  <Link to="/gallery">gallery</Link>*/}
+            {/*</div>*/}
           </div>
           <div>
             <Route path="/about" component={About}/>
             <Route path="/journey" component={Journey}/>
-            <Route path="/gallery" component={Gallery}/>
+            {/*<Route path="/gallery" component={Gallery}/>*/}
           </div>
         </HashRouter>
     }
