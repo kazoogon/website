@@ -5,17 +5,17 @@ It's my website.
 I'm Kazu, but Polish people call me "Kaziu".    
 Kaziu is kawaii version of polish name "Kazimierz(カジミエジュ)"
 
-## Languages
+## Languages 🈶
 html, sass  
 react.js 16.11.0    
 typescript 3.7.2    
 three.js 0.110.0    
 webpack 4.41.2
 
-## Infrastructure
-2/2020 AWS (EC2)
+## Infrastructure 🏢
+AWS
 
-## Usage
+## Usage 🔑
 ### compile js and css
 development
 ```
@@ -39,6 +39,6 @@ $ cd ./dist
 $ live-server .
 ```
 
-## Author
+## Author 👨‍🎓
 
 [sasaki kazutaka (kaziu)](https://github.com/kazoogon)
