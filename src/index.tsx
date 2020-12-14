@@ -5,7 +5,7 @@ import * as ReactDOM from 'react-dom';
 import {Route, Link, HashRouter} from "react-router-dom";
 import {About} from './about';
 import {Journey} from './journey';
-import {Gallery} from './gallery';
+// import {Gallery} from './gallery';
 import {Top} from "./top";
 import {PAGE_NAME} from "./utils/const";
 import TitleSvg from './img/kaziu.svg';
