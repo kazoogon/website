@@ -5,7 +5,6 @@ import * as ReactDOM from 'react-dom';
 import {Route, Link, HashRouter} from "react-router-dom";
 import {About} from './about';
 import {Journey} from './journey';
-// import {Gallery} from './gallery';
 import {Top} from "./top";
 import {PAGE_NAME} from "./utils/const";
 import TitleSvg from './img/kaziu.svg';
@@ -30,7 +29,7 @@ class App extends React.Component<{}, IState> {
 
     //deal with reloading (maybe there is better way tho)
     //(tmp)reload時にはtopページに戻り、urlを / に。
-    window.history.pushState(null, null, `#/`);
+    window.history.pushState(null, null, `/`);
   }
 
   private changePage = (page: string): void => {
@@ -51,6 +50,11 @@ class App extends React.Component<{}, IState> {
     this.setState({page});
   };
 
+  private handleClickLogo = (): void => {
+    this.setState({page: PAGE_NAME.TOP})
+    window.history.pushState(null, null, `/`);
+  }
+
   render() {
     let display;
 
@@ -59,7 +63,7 @@ class App extends React.Component<{}, IState> {
     } else {
       display =
         <HashRouter>
-          <div className="title" ref={this.titleRef}><TitleSvg /></div>
+          <div className="title" ref={this.titleRef} onClick={()=>this.handleClickLogo()}><TitleSvg /></div>
           <div className="navigation">
             <div className={`navigation-item ${this.state.page === PAGE_NAME.ABOUT? 'active' : ''}`} onClick={() => this.handleClickNav(PAGE_NAME.ABOUT)}>
               <Link to="/about">about me</Link>
