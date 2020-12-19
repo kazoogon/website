@@ -100,14 +100,20 @@ export const About = () => {
               onClick={()=>togglePlay()}
             />
             <div className="bars">
-              <input
-                type="range"
-                min="0"
-                max="1"
-                step=".01"
-                value={volume}
-                onChange={(e)=>changeVolume(e.target.value)}
-              />
+              <div className="audio">
+                <img
+                  className="speaker"
+                  src={`${CONST.PATH.IMG_ABOUT}speaker.svg`}
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step=".01"
+                  value={volume}
+                  onChange={(e)=>changeVolume(e.target.value)}
+                />
+              </div>
               <progress value={progress}/>
             </div>
           </div>

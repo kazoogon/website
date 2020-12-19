@@ -52,9 +52,17 @@ $font: 'Quantico', 'Hiragino Kaku Gothic ProN', "Hiragino Sans", Meiryo, sans-se
       .bars{
         display: flex;
         flex-direction: column;
+        .audio {
+          .speaker {
+            width: 30px;
+            margin-right: 10px;
+          }
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
         input[type="range"] {
           width: 70%;
-          margin-bottom: 10px;
           -webkit-appearance: none;
           appearance: none;
           cursor: pointer;
