@@ -7,6 +7,7 @@ export const About = () => {
   const [currentCountry, setCurrentCountry] = useState('japan')
   const [volume, setVolume] = useState('0.5')
   const [isPlaying, setIsPlaying] = useState(false)
+  const [showSentence,setShowSentence] = useState(false)
   const [progress, setProgress] = useState(0)
   const [audio, setAudio] = useState()
 
@@ -20,6 +21,7 @@ export const About = () => {
     audio.pause()
     setIsPlaying(false)
     setProgress(0)
+    setShowSentence(false)
   }
 
   const changeVolume = (volume: string) => {
@@ -30,6 +32,7 @@ export const About = () => {
   const togglePlay = () => {
     if(audio.paused){
       setIsPlaying(true)
+      setShowSentence(true)
       audio.volume = volume;
       audio.play()
       audio.addEventListener('timeupdate', ()=> {
@@ -119,8 +122,8 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div className="sentence">
-        {setSentence()}
+      <div className={`sentence ${showSentence && 'active'}`}>
+        {showSentence && setSentence()}
       </div>
     </div>
   );
