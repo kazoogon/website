@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react';
 import * as CONST from "../utils/const";
 import {useEffect, useState} from "react";
