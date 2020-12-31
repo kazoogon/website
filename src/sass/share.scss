@@ -41,6 +41,17 @@ a {
   }
 }
 
+.github {
+  position: absolute;
+  bottom: 50px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 10;
+  img {
+    width: 25px;
+  }
+}
+
 .navigation {
   $z-index: 100;
 

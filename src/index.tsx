@@ -72,6 +72,9 @@ class App extends React.Component<{}, IState> {
               <Link to="/journey">journey</Link>
             </div>
           </div>
+          <a href="https://github.com/kazoogon/website" className="github" target="_blank">
+            <img src={`/img/github.svg`} />
+          </a>
           <div>
             <Route path="/about" component={About}/>
             <Route path="/journey" component={Journey}/>
