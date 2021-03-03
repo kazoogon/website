@@ -73,57 +73,58 @@ export const About = () => {
     <div className="about">
       <div className="container">
         <img src={`${CONST.PATH.IMG_ABOUT}kaziu.png`} width="250px" className={`logo ${isPlaying && 'active'}`}/>
-        <div className="countries">
-          <img
-            src={`${CONST.PATH.IMG_ABOUT}japan.svg`}
-            onClick={()=>changeCountry('japan')}
-            className={currentCountry === 'japan' && 'active'}
-          />
-          <img
-            src={`${CONST.PATH.IMG_ABOUT}poland.svg`}
-            onClick={()=>changeCountry('poland')}
-            className={currentCountry === 'poland' && 'active'}
-          />
-          <img
-            src={`${CONST.PATH.IMG_ABOUT}uk.svg`}
-            onClick={()=>changeCountry('uk')}
-            className={currentCountry === 'uk' && 'active'}
-          />
-          <img
-            src={`${CONST.PATH.IMG_ABOUT}spain.svg`}
-            onClick={()=>changeCountry('spain')}
-            className={currentCountry === 'spain' && 'active'}
-          />
-        </div>
-        <div className="display">
-          <div className="control">
-            <img
-              className="play"
-              src={`${CONST.PATH.IMG_ABOUT}${isPlaying ? 'pause.svg' : 'play.svg'}`}
-              onClick={()=>togglePlay()}
-            />
-            <div className="bars">
-              <div className="audio">
-                <img
-                  className="speaker"
-                  src={`${CONST.PATH.IMG_ABOUT}speaker.svg`}
-                />
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step=".01"
-                  value={volume}
-                  onChange={(e)=>changeVolume(e.target.value)}
-                />
-              </div>
-              <progress value={progress}/>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={`sentence ${showSentence && 'active'}`}>
-        {showSentence && setSentence()}
+          <div className="maintenance">not yet...😛</div>
+      {/*  <div className="countries">*/}
+      {/*    <img*/}
+      {/*      src={`${CONST.PATH.IMG_ABOUT}japan.svg`}*/}
+      {/*      onClick={()=>changeCountry('japan')}*/}
+      {/*      className={currentCountry === 'japan' && 'active'}*/}
+      {/*    />*/}
+      {/*    <img*/}
+      {/*      src={`${CONST.PATH.IMG_ABOUT}poland.svg`}*/}
+      {/*      onClick={()=>changeCountry('poland')}*/}
+      {/*      className={currentCountry === 'poland' && 'active'}*/}
+      {/*    />*/}
+      {/*    <img*/}
+      {/*      src={`${CONST.PATH.IMG_ABOUT}uk.svg`}*/}
+      {/*      onClick={()=>changeCountry('uk')}*/}
+      {/*      className={currentCountry === 'uk' && 'active'}*/}
+      {/*    />*/}
+      {/*    <img*/}
+      {/*      src={`${CONST.PATH.IMG_ABOUT}spain.svg`}*/}
+      {/*      onClick={()=>changeCountry('spain')}*/}
+      {/*      className={currentCountry === 'spain' && 'active'}*/}
+      {/*    />*/}
+      {/*  </div>*/}
+      {/*  <div className="display">*/}
+      {/*    <div className="control">*/}
+      {/*      <img*/}
+      {/*        className="play"*/}
+      {/*        src={`${CONST.PATH.IMG_ABOUT}${isPlaying ? 'pause.svg' : 'play.svg'}`}*/}
+      {/*        onClick={()=>togglePlay()}*/}
+      {/*      />*/}
+      {/*      <div className="bars">*/}
+      {/*        <div className="audio">*/}
+      {/*          <img*/}
+      {/*            className="speaker"*/}
+      {/*            src={`${CONST.PATH.IMG_ABOUT}speaker.svg`}*/}
+      {/*          />*/}
+      {/*          <input*/}
+      {/*            type="range"*/}
+      {/*            min="0"*/}
+      {/*            max="1"*/}
+      {/*            step=".01"*/}
+      {/*            value={volume}*/}
+      {/*            onChange={(e)=>changeVolume(e.target.value)}*/}
+      {/*          />*/}
+      {/*        </div>*/}
+      {/*        <progress value={progress}/>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+      {/*<div className={`sentence ${showSentence && 'active'}`}>*/}
+      {/*  {showSentence && setSentence()}*/}
       </div>
     </div>
   );

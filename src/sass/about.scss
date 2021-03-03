@@ -16,6 +16,10 @@ $font: 'Quantico', 'Hiragino Kaku Gothic ProN', "Hiragino Sans", Meiryo, sans-se
     @include position-center();
   }
 
+  .maintenance {
+    text-align: center;
+  }
+
   .countries {
     display: flex;
     justify-content: space-around;
